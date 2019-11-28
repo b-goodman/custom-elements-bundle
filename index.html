@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <script type="module" src="./dist/index.js"></script>
+</head>
+
+<body>
+
+    <drag-pane heading="Draggable Pane">
+        <tab-pane>
+            <div data-tab="Some Text" style="width: 300px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div data-tab="Disabled" disabled>Nothing to see here.</div>
+            <div data-tab="An Image">
+                <img src="http://lorempixel.com/400/200/" />
+            </div>
+        </tab-pane>
+    </drag-pane>
+
+    <drag-pane>
+        <syntax-highlight class="language-js">
+            <pre><code class="language-js">
+    import style from "./prism.css";
+    
+    export default class SyntaxHighlight extends HTMLElement {
+        constructor() {
+            super();
+            const template = document.createElement('template');
+            template.innerHTML = `&lt;style&gt;${style}&lt;/style&gt`;
+            const shadowRoot = this.attachShadow({mode: 'open'});
+            shadowRoot.appendChild(template.content.cloneNode(true));
+        }
+    
+        connectedCallback() {
+            Array.from(this.children).forEach( el => {
+                import("./prism").then( (Prism) => {
+                    Prism.default.highlightElement(el, false, () => {
+                        this.shadowRoot!.appendChild(el)
+                    });
+                })
+            });
+        }
+    
+    }
+    
+    window.customElements.define('syntax-highlight', SyntaxHighlight);
+        </code></pre>
+        </syntax-highlight>
+    </drag-pane>
+
+</body>
+</html>
