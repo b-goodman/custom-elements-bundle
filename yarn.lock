@@ -35,12 +35,17 @@
     to-fast-properties "^2.0.0"
 
 "@bgoodman/code-edit@file:../custom-elements/code-edit":
-  version "1.0.0"
+  version "1.2.0"
   dependencies:
     codemirror "^5.49.2"
 
 "@bgoodman/custom-tooltip@file:../custom-elements/custom-tooltip":
   version "1.0.0"
+
+"@bgoodman/split-pane@file:../custom-elements/split-pane":
+  version "1.0.0"
+  dependencies:
+    split.js "^1.5.11"
 
 "@bgoodman/syntax-highlight@file:../custom-elements/syntax-highlight":
   version "1.0.0"
@@ -2433,6 +2438,11 @@ sourcemap-codec@^1.4.4:
   version "1.4.6"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.6.tgz#e30a74f0402bad09807640d39e971090a08ce1e9"
   integrity sha512-1ZooVLYFxC448piVLBbtOxFcXwnymH9oUF8nRd3CuYDVvkRBxRl6pB4Mtas5a4drtL+E8LDgFkQNcgIw6tc8Hg==
+
+split.js@^1.5.11:
+  version "1.5.11"
+  resolved "https://registry.yarnpkg.com/split.js/-/split.js-1.5.11.tgz#3654b2a8c625994e33c531df5c4dea83ca8af011"
+  integrity sha512-ec0sAbWnaMGpNHWo1ZgIlF3Mx7GzSyaO0GlcEBZGIFZQwYPPkbDV6JRpDmpzIshVig7USREuEPudy0ygQaskXg==
 
 sprintf-js@~1.0.2:
   version "1.0.3"

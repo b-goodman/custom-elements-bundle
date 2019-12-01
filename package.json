@@ -2,10 +2,12 @@
   "name": "custom-elements-bundle",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/rollup -c rollup.config.js",
+    "build": "rimraf ./dist && ./node_modules/.bin/rollup -c rollup.config.js",
     "start": "./node_modules/.bin/serve"
   },
   "devDependencies": {
@@ -26,6 +28,7 @@
     "rollup-plugin-typescript2": "^0.25.2",
     "serve": "^11.2.0",
     "typescript": "^3.7.2",
-    "typescript-plugin-css-modules": "^2.0.2"
+    "typescript-plugin-css-modules": "^2.0.2",
+    "@bgoodman/split-pane": "file:../custom-elements/split-pane"
   }
 }
