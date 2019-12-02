@@ -13,6 +13,7 @@
   "devDependencies": {
     "@bgoodman/code-edit": "file:../custom-elements/code-edit",
     "@bgoodman/custom-tooltip": "file:../custom-elements/custom-tooltip",
+    "@bgoodman/split-pane": "file:../custom-elements/split-pane",
     "@bgoodman/syntax-highlight": "file:../custom-elements/syntax-highlight",
     "@bgoodman/tab-pane": "file:../custom-elements/tab-pane",
     "drag-pane": "file:../custom-elements/drag-pane",
@@ -28,7 +29,6 @@
     "rollup-plugin-typescript2": "^0.25.2",
     "serve": "^11.2.0",
     "typescript": "^3.7.2",
-    "typescript-plugin-css-modules": "^2.0.2",
-    "@bgoodman/split-pane": "file:../custom-elements/split-pane"
+    "typescript-plugin-css-modules": "^2.0.2"
   }
 }
