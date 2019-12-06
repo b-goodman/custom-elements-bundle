@@ -13,6 +13,7 @@
   "devDependencies": {
     "@bgoodman/code-edit": "file:../custom-elements/code-edit",
     "@bgoodman/custom-tooltip": "file:../custom-elements/custom-tooltip",
+    "@bgoodman/slide-drawer": "file:../custom-elements/slide-drawer",
     "@bgoodman/split-pane": "file:../custom-elements/split-pane",
     "@bgoodman/syntax-highlight": "file:../custom-elements/syntax-highlight",
     "@bgoodman/tab-pane": "file:../custom-elements/tab-pane",
