@@ -13,6 +13,7 @@
   "devDependencies": {
     "@bgoodman/code-edit": "file:../custom-elements/code-edit",
     "@bgoodman/custom-tooltip": "file:../custom-elements/custom-tooltip",
+    "@bgoodman/dialog-box": "file:../custom-elements/dialog-box",
     "@bgoodman/slide-drawer": "file:../custom-elements/slide-drawer",
     "@bgoodman/split-pane": "file:../custom-elements/split-pane",
     "@bgoodman/syntax-highlight": "file:../custom-elements/syntax-highlight",
@@ -31,5 +32,8 @@
     "serve": "^11.2.0",
     "typescript": "^3.7.2",
     "typescript-plugin-css-modules": "^2.0.2"
+  },
+  "dependencies": {
+    "img-slideshow": "file:../custom-elements/img-slideshow"
   }
 }
